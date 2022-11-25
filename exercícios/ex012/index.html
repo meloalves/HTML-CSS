@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeos está hospedado no seu próprio servidor.</p>
+
+    <!--consumindo dados no servidor-->
+    <video width="560" poster="imagens/thumb.jpg" controls> 
+        <source src="midia/video-basketball.webm" type="video/webm">
+        <source src="midia/video-basketball.mp4" type="video/mp4">
+        <source src="midia/video-basketball.m4v" type="video/m4v">
+        <source src="midia/video-basketball.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatilibilidade com reprodução de vídeos.</p>
+
+    </video>
+
+    <!--consumindo dados no YouTube-->
+    <h1>Inserindo Videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Ksoqt69zDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--consumindo dados no Vimeo de forma privada-->
+    <h1>Inserindo Filmes do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/150870038?h=9243eb8c1e&portrait=0&badge=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
