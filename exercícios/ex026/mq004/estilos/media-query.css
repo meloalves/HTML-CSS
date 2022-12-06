@@ -1,3 +1,111 @@
 @charset "UTF-8";
 
 /* todas as demais midias*/
+
+/* Typical Device Breakpoints 
+  pequenas telas:  max w 600px
+  celular: min w 600px
+  tablets: min w 768px
+  desktops: min w 992px
+  grandes telas: min 1200px
+
+*/
+
+@media print { /* IMPRESSÃO */
+    body {
+      background-image: url(../imagens/back-print.jpg); /* DESNECESSÁRIO */
+      font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    main h1 {
+      text-shadow: none;
+      color: black;
+
+    }
+
+    main {
+      border: 2px solid black;
+
+    }
+    
+    main::after {
+      content: 'Essa impressão foi feita através do site cursoemvideo.com';
+      
+    }
+
+    img {
+      display: none;
+      margin: auto;
+        
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#desktop { display: none; }
+    img#tv { display: none; }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body{
+      background-image: url(../imagens/back-tablet.jpg);
+      
+    }
+
+    img {
+      display: none;
+      margin: auto;
+      
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#desktop {display: none;}
+    img#tv { display: none; }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+      background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    
+    img {
+      display: none;
+      margin: auto;
+        
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#desktop {display: block;}
+    img#tv { display: none; }
+
+}
+
+@media screen and (min-width: 1200px) {  /* GRANDES TELAS */
+    body {
+      background-image: url(../imagens/back-tv.jpg);
+
+    }
+
+    
+    img {
+      display: none;
+      margin: auto;
+        
+    }
+    
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#desktop {display: none;}
+    img#tv { display: block; }
+}
